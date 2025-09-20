@@ -3,26 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-    <link rel="icon" type="image/png" href="logo.png">
-
+  <title>Adarsh</title>
+  <link rel="icon" type="image/png" href="logo.png">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-  <!-- Font Awesome for social media icons -->
-   <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "ByAlioUXpN5pGKMZw",
-      });
-   })();
-</script> 
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "ByAlioUXpN5pGKMZw",  // ✅ your EmailJS public key
+      });
+    })();
+  </script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <header>
@@ -44,19 +44,17 @@
       <p>A passionate web developer</p>
       <a href="#projects" class="btn">View My Work</a>
     </div>
-     <div class="home-image">
-    <!-- <img src="WhatsApp Image 2025-09-18 at 8.40.31 PM.jpeg" alt="Adarsh Image"> -->
-  </div>
+    <div class="home-image"></div>
   </section>
 
   <section id="about">    
     <div class="about-content">
       <h2>About Me</h2>
       <p>
-        Hi, I'm <span class="highlight">Adarsh</span>  
+        Hi, I'm <span class="highlight">Adarsh</span>.  
         I’m passionate about web development and currently learning 
         <strong>HTML, CSS, and JavaScript</strong>.  
-        My goal is to become a <strong> Fullstack developer</strong> 
+        My goal is to become a <strong>Fullstack developer</strong>.
       </p>
       <p>
         I’ve also started improving my <strong>problem-solving skills</strong>  
@@ -93,29 +91,25 @@
         </div>
       </div>
     </div>
-     
-
   </section>
-  <section id="contact">
-  <div class="contact-container">
-    <h2>Contact Me</h2>
-    <form id="contact-form">
-      <input type="text" name="user_name" placeholder="Your Name" required>
-      <input type="email" name="user_email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-    <p id="form-status"></p>
-  </div>
-</section>
 
+  <section id="contact">
+    <div class="contact-container">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" name="user_name" placeholder="Your Name" required>
+        <input type="email" name="user_email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <p id="form-status"></p>
+    </div>
+  </section>
 
   <footer>
     <p>© 2025 Adarsh | All Rights Reserved</p>
     <div class="social-links">
-<a href="https://mail.google.com/mail/?view=cm&fs=1&to=adarshpdinesh333@gmail.com" target="_blank">
-  <i class="fa-solid fa-envelope"></i>
-</a>
+      <a href="mailto:adarshpdinesh333@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
       <a href="https://www.instagram.com/adh.harshh/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
       <a href="https://x.com/p41020834" target="_blank"><i class="fa-brands fa-twitter"></i></a>
       <a href="https://www.linkedin.com/in/adarshpdinesh/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
@@ -123,5 +117,7 @@
     </div>
   </footer>
 
+  <!-- ✅ Load your JS at the bottom -->
+  <script src="script.js"></script>
 </body>
 </html>
